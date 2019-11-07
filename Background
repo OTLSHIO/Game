@@ -1,0 +1,12 @@
+def main():
+    screen=pygame.display.set_mode((700,400),0,32)
+    background=pygame.image.load('D:\\Pycharm\\PyProject\\horseraceground.png')
+    while True:
+        screen.blit(background,(0,0))
+        pygame.display.update()
+        time.sleep(0.05)
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+if __name__=='__main__':
+    main()
